@@ -16,7 +16,7 @@ A modern Task Management app built with **React + Vite** (Frontend) and **FastAP
 
 ## Setup Instructions (Windows)
 
-Open **Command Prompt** and run the following commands:
+Open **Command Prompt** and run the following commands to set up:
 
 ```cmd
 mkdir fullstack-task-app
@@ -42,3 +42,50 @@ npm install
 npm install -D tailwindcss@3 postcss autoprefixer
 npx tailwindcss init -p
 ````
+
+How to Run the Application
+Follow these steps to run the Fullstack Task Management App:
+
+## 1. Clone the repository
+Right-click on the folder where you want to clone the repository.
+Open Terminal
+On terminal
+```cmd
+git clone https://github.com/Kumitokiru/fullstack-task-app.git
+cd fullstack-task-app
+````
+
+## 2. Open Two Terminals
+Right-click inside the fullstack-task-app folder and open two separate terminals.
+## Terminal 1 - Backend
+```cmd
+cd backend
+
+:: Install dependencies (first time only)
+pip install -r requirements.txt
+
+:: Run the backend server
+uvicorn app.main:app --reload --port 8000
+````
+
+## Terminal 2 - Frontend
+```cmd
+cd frontend
+
+:: Run the frontend (React)
+npm run dev
+````
+
+## 3. Open the Application
+Open your browser and go to:
+http://localhost:5173
+You should now see the Task Manager application running.
+
+Additional Info
+
+- Backend API: http://localhost:8000
+- API Documentation: http://localhost:8000/docs
+- Make sure both terminals are running at the same time.
+
+
+
